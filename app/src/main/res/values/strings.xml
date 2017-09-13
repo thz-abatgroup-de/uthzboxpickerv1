@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BoxPickerA</string>
+    <string name="title_activity_main">BoxPickerA</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="title_activity_fullscreen">BoxPickerA</string>
+
+    <string name="text_start">Mit Klick auf Touchpad Entnahme starten.</string>
+    <string name="text_pick">Bitte angezeigten Artikel entnehmen.</string>
+    <string name="text_end">Quittierung mit Klick auf Touchpad.</string>
+    <string name="init_number">999999</string>
+    <string name="scan_box">Bitte Gitterbox scannen</string>
+    <string name="box_number">123123</string>
+    <string name="scan_stockyard">Bitte Fach scannen</string>
+    <string name="default_hu_no">999999</string>
+    <string name="test_maktx">Dies ist eine Materialbeschreibung</string>
+    <string name="scan_material">Bitte Produkt scannen</string>
+    <string name="pick_units">1</string>
+</resources>

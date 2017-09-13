@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BoxPickerA</string>
+    <string name="title_activity_main">BoxPickerA</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="title_activity_fullscreen">BoxPickerA</string>
+
+    <string name="text_start">Mit Klick auf Touchpad Entnahme starten.</string>
+    <string name="text_pick">Bitte angezeigten Artikel entnehmen.</string>
+    <string name="text_end">Quittierung mit Klick auf Touchpad.</string>
+    <string name="text_scan_shelf">Bitte Fach %1$s erfassen.</string>
+    <string name="text_scan_product">Bitte Produkt %1$s scannen.</string>
+    <string name="text_scanby_touch">Scannen mit Klick auf Touchpad.</string>
+    <string name="false_product">Falsches Produkt gescannt, %1$s wird gebraucht.</string>
+    <string name="false_shelf">Falsches Fach gescannt, %1$s wird gebraucht.</string>
+    <string name="right_shelf">Richtige Lagerplatz wurde gescannt.</string>
+    <string name="right_product">Richtiges Produkt wurde gescannt.</string>
+    <string name="end_of_picking">Entnehme 1, Auftrag ist quittiert.</string>
+</resources>

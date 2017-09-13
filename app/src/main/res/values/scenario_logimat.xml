@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="shelf_columns_logimat">1</integer>
+    <integer name="shelf_rows_logimat">7</integer>
+    <bool name="is_variant1_logimat">true</bool> <!-- SEDI: Switch between scenario 1 and 2 -->
+    <dimen name="top_margin_logimat">5dp</dimen>
+    <string name="split_sign_logimat">","</string>
+    <array name="products_logimat">
+        <item>@drawable/logimat_turnbeutel_250px</item>     <!-- Product 0 oft -->
+        <item>@drawable/logimat_kreisel_250px</item>         <!-- Product 1 oft -->
+        <item>@drawable/logimat_powerbank_250px</item>      <!-- Product 2 selten-->
+        <item>@drawable/logimat_usb_stick_250px</item><!-- Product 3 selten-->
+        <item>@drawable/logimat_kugelschreiber_250px</item><!-- Product 4 ab und zu-->
+        <item>@drawable/logimat_bleistift_250px</item>         <!-- Product 5 ab und zu-->
+        <item>@drawable/logimat_kladde_250px</item>         <!-- Product 6 ab und zu-->
+        <item>@drawable/logimat_lany_book_250px</item>         <!-- Product 7 ab und zu-->
+        <item>@drawable/logimat_pfefferminz_250px</item>         <!-- Product 8 sehr oft-->
+        <item>@drawable/logimat_pfefferminz_250px</item>         <!-- Product 8 sehr oft-->
+    </array>
+    <array name="products_150px_logimat">
+        <item>@drawable/logimat_turnbeutel_250px</item>     <!-- Product 0 oft -->
+        <item>@drawable/logimat_kreisel_250px</item>         <!-- Product 1 oft -->
+        <item>@drawable/logimat_powerbank_250px</item>      <!-- Product 2 selten-->
+        <item>@drawable/logimat_usb_stick_250px</item><!-- Product 3 selten-->
+        <item>@drawable/logimat_kugelschreiber_250px</item><!-- Product 4 ab und zu-->
+        <item>@drawable/logimat_bleistift_250px</item>         <!-- Product 5 ab und zu-->
+        <item>@drawable/logimat_kladde_250px</item>         <!-- Product 6 ab und zu-->
+        <item>@drawable/logimat_lany_book_250px</item>         <!-- Product 7 ab und zu-->
+        <item>@drawable/logimat_pfefferminz_250px</item>         <!-- Product 8 sehr oft-->
+        <item>@drawable/logimat_pfefferminz_250px</item>         <!-- Product 9 gar nicht-->
+    </array>
+
+    //ASSERT: The array must have the same number of entries as the stock! (shelf_columns_logimat*shelf_rows_logimat)
+    //ASSERT: Only productids should be used!
+    <array name="products_in_shelfs_logimat">
+    <item>0</item>    <!-- in Shelf 1: Product 0 -->
+    <item>1</item>    <!-- in Shelf 2: Product 1 -->
+    <item>2,3</item>      <!-- in Shelf 3: Product 2 & 3 -->
+    <item>4,5</item>    <!-- in Shelf 4: Product 4 & 5 -->
+    <item>6,7</item>      <!-- in Shelf 5: Product 6 & 7 -->
+    <item>8</item>    <!-- in Shelf 6: Product 8 -->
+    <item>9</item>    <!-- in Shelf 7: no product -->
+</array>
+
+    //here you can define the probability distribution
+    //ASSERT: sum of items should be equal with the amount of shelfs
+    //ASSERT: the probability should be defined for every product in a shelf
+    //e.g. a product in a shelf with a probability of 75 will appear 5 times more than a product in a shelf with a probability of 15
+    <array name="choosing_probability_logimat">
+        <item>10</item>
+        <item>15</item>
+        <item>3,3</item>
+        <item>10,10</item>
+        <item>9,3</item>
+        <item>29</item>
+        <item>0</item>
+    </array>
+</resources>

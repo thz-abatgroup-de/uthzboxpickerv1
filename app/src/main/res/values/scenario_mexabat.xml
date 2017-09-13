@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="shelf_columns_mexabat">1</integer>
+    <integer name="shelf_rows_mexabat">5</integer>
+    <bool name="is_variant1_mexabat">true</bool> <!-- SEDI: Switch between scenario 1 and 2 -->
+    <dimen name="top_margin_mexabat">5dp</dimen>
+    <string name="split_sign_mexabat">","</string>
+    <array name="products_mexabat">
+        <item>@drawable/mexabat_powerbank_150px</item>       <!-- Product 0 -->
+        <item>@drawable/mexabat_turnbeutel_150px</item>      <!-- Product 1 -->
+        <item>@drawable/mexabat_postit_150px</item>          <!-- Product 2 -->
+        <item>@drawable/mexabat_brillenputztuch_150px</item> <!-- Product 3 -->
+        <item>@drawable/mexabat_kranky_150px</item>          <!-- Product 4 -->
+        <item>@drawable/mexabat_kuli_150px</item>            <!-- Product 5 -->
+        <item>@drawable/mexabat_usb_stick_150px</item>       <!-- Product 6 -->
+    </array>
+    <array name="products_150px_mexabat">
+        <item>@drawable/mexabat_powerbank_250px</item>       <!-- Product 0 -->
+        <item>@drawable/mexabat_turnbeutel_250px</item>      <!-- Product 1 -->
+        <item>@drawable/mexabat_postit_grau_250px</item>          <!-- Product 2 -->
+        <item>@drawable/mexabat_brillenputztuch_250px</item> <!-- Product 3 -->
+        <item>@drawable/mexabat_kranky_150px</item>          <!-- Product 4 -->
+        <item>@drawable/mexabat_kuli_250px</item>            <!-- Product 5 -->
+        <item>@drawable/mexabat_usb_stick_250px</item>       <!-- Product 6 -->
+    </array>
+
+    //ASSERT: The array must have the same number of entries as the stock! (shelf_columns_mexabat*shelf_rows_mexabat)
+    //ASSERT: Only productids should be used!
+    <array name="products_in_shelfs_mexabat">
+        <item>3</item>    <!-- in Shelf 1: Product 3  -->
+        <item>2</item>    <!-- in Shelf 2: Product 2  -->
+        <item>0,6</item>  <!-- in Shelf 3: Product 0 & 6 -->
+        <item>1</item>    <!-- in Shelf 4: Product 1  -->
+        <item>4,5</item>  <!-- in Shelf 5: Product 4 & 5 -->
+        </array>
+
+    //here you can define the probability distribution
+    //ASSERT: sum of items should be equal with the amount of shelfs
+    //ASSERT: the probability should be defined for every product in a shelf
+    //e.g. a product in a shelf with a probability of 75 will appear 5 times more than a product in a shelf with a probability of 15
+    <array name="choosing_probability_mexabat">
+        <item>50</item>
+        <item>50</item>
+        <item>10,10</item>
+        <item>50</item>
+        <item>50,50</item>
+    </array>
+</resources>

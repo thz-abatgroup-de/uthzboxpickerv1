@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="shelf_columns">2</integer>
+    <integer name="shelf_rows">3</integer>
+    <bool name="is_variant_1">true</bool> <!-- SEDI: Switch between scenario 1 and 2 -->
+    <dimen name="top_margin">5dp</dimen>
+    <string name="split_sign">","</string>
+    <array name="products">
+        <item>@drawable/logimat_usb_stick_250px</item>      <!-- Product 0 -->
+        <item>@drawable/logimat_kladde_250px</item>   <!-- Product 1 -->
+        <item>@drawable/logimat_kreisel_250px</item>     <!-- Product 2 -->
+        <item>@drawable/logimat_lany_book_250px</item>  <!-- Product 3 -->
+    </array>
+    <array name="products_150px">
+        <item>@drawable/logimat_usb_stick_250px</item>      <!-- Product 0 -->
+        <item>@drawable/logimat_kladde_250px</item>   <!-- Product 1 -->
+        <item>@drawable/logimat_kreisel_250px</item>     <!-- Product 2 -->
+        <item>@drawable/logimat_lany_book_250px</item>  <!-- Product 3 -->
+    </array>
+    //ASSERT: The array must have the same number of entries as the stock!
+    //(shelf_columns*shelf_rows)
+    //ASSERT: Only productids should be used!
+    <array name="products_in_shelfs">
+        <item>2</item>    <!-- in Shelf 1: Product 0 & 3 -->
+        <item>2</item>    <!-- in Shelf 2: Product 2 & 1 -->
+        <item>3</item>      <!-- in Shelf 3: Product 0-->
+        <item>0</item>      <!-- in Shelf 4: Product 1 -->
+        <item>1</item>      <!-- in Shelf 5: Product 3 -->
+        <item>1</item>      <!-- in Shelf 6: Product 2 -->
+    </array>
+    //ASSERT: sum of items should be equal with the amount of shelfs
+    //ASSERT: the probability should be defined for every product in a shelf
+    //e.g. a product in a shelf with a probability of 75 will appear 5 times more than a product in a shelf with a probability of 15
+    <array name="choosing_probability"> <!-- here you can define the probability distribution -->
+    <item>30</item>
+    <item>30</item>
+    <item>30</item>
+    <item>2</item>
+    <item>30</item>
+    <item>30</item>
+</array>
+</resources>

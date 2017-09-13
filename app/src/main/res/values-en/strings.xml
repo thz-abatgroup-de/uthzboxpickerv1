@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BoxPickerA</string>
+    <string name="title_activity_main">BoxPickerA</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_fullscreen">BoxPickerA</string>
+
+    <string name="text_start">Clicking on touch pad starts picking process.</string>
+    <string name="text_pick">Please pick displayed product.</string>
+    <string name="text_end">Click on touch pad to confirm.</string>
+    <string name="text_scan_shelf">Please scan shelf %1$s.</string>
+    <string name="text_scan_product">Please scan product %1$s.</string>
+    <string name="text_scanby_touch">Scan with clicking on touchpad.</string>
+    <string name="false_product">Wrong product scanned, please scan %1$s.</string>
+    <string name="false_shelf">Wrong shelf scanned, need %1$s.</string>
+    <string name="right_shelf">Right shelf scanned.</string>
+    <string name="right_product">Right product scanned.</string>
+    <string name="end_of_picking">Get 1, task quitted.</string>
+</resources>
